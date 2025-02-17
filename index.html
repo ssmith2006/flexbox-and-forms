@@ -1,47 +1,148 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="reset.css" />
+    <title>Week 3|Day 3 Class Assignment</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
     <header>
-        <nav>
-            <p>Black History Moments</p>
-            <ul class="flex gap list-style">
-                <li>Home</li>
-                <li>Who We Are</li>
-                <li>BHM Facts</li>
-                <li>Contact Us</li>
-            </ul>
-        </nav>
+      <nav class="flex space-between background">
+        <p class="text-align font">Black History Moments</p>
+        <ul class="flex gap list-style font">
+          <li>Home</li>
+          <li>Who We Are</li>
+          <li><a href="#facts">BHM Facts</a></li>
+          <li>Contact Us</li>
+        </ul>
+      </nav>
     </header>
-    
+    <!-- Form starts here -->
+    <h2>Login:</h2>
+    <h3>Be sure to check your spelling!:</h3>
+    <form class="form flex" method="GET" action="#">
+      <!-- username input -->
+      <label class="label" for="name">Username:</label>
+      <input
+        class="input"
+        type="text"
+        id="username"
+        name="username"
+        placeholder="Username Here"
+        autofocus
+      />
+      <!-- email input -->
+      <label class="label" for="email">Email:</label>
+      <input
+        class="input"
+        type="email"
+        id="email"
+        name="email"
+        placeholder="Email Here"
+        required
+        aria-required="true"
+      />
+      <!-- password input -->
+      <label class="label" for="message">Password:</label>
+      <input
+        class="input"
+        type="password"
+        id="password"
+        name="password"
+        placeholder="Password Here"
+        required
+        aria-required="true"
+      />
+      <!-- button -->
+      <button class="button" type="submit">Submit</button>
+    </form>
+
     <main>
-        <h1 class="text-align margin-top">Butter Pecan Ice Cream: THE HISTORY</h1>
-        <img src="https://placehold.co/200x200" alt="bowl of butter pecan ice cream">
-        <section>
-            <h2>You Can't Have That!</h2>
-            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Explicabo odio aut facilis iusto! Quam rerum laboriosam necessitatibus labore, alias esse minima eum ad, dignissimos facere nesciunt consequuntur reprehenderit explicabo obcaecati.</p> <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis aperiam iusto excepturi saepe, laboriosam dolorem tenetur qui voluptate, necessitatibus ducimus quam at eius dolor deleniti ut eveniet, similique est numquam.
-            Culpa magnam architecto, deleniti reiciendis beatae rem veritatis perferendis, amet obcaecati neque inventore facere illum ipsa harum assumenda. Exercitationem nihil cupiditate obcaecati, fugiat esse recusandae hic adipisci asperiores reprehenderit quae.
-            Obcaecati magni ducimus aut, est mollitia cumque autem ipsum molestias voluptatum iusto dolorem cupiditate accusamus unde id dolorum veniam eaque non quasi fugiat veritatis esse? Optio, hic libero. Nihil, sequi?</p>
-        </section>
-        <section>
-            <h2>An Alternative: Abundance of Pecans</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores nobis a fugiat deleniti maiores quis molestiae non nam architecto magni vitae quibusdam quaerat corporis voluptate ratione, iusto libero, mollitia rerum.</p>
-            <img src="https://placehold.co/200x200" alt="pecan tree">
-            
-            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Officiis nulla deleniti itaque. Earum magnam veritatis obcaecati tempora asperiores eos aperiam repellat minus explicabo veniam, quo debitis consequatur nemo odit quisquam.</p>
-        </section>
-        <section>
-            <h2>A New Flavor in Ya Ear!</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores quas quos quisquam adipisci excepturi tempore debitis harum nemo. Dolorem quo aperiam, quasi quae praesentium amet odit doloremque ad delectus harum.
-            Ratione eum ullam maxime labore magnam quo vel dicta nulla facilis corrupti! Minima labore nam dolorum incidunt beatae praesentium! Dicta quia rerum minima saepe vero blanditiis! Voluptas dicta officiis rerum?</p>
-        </section>
+      <h1 class="text-align margin-top" id="facts">
+        Butter Pecan Ice Cream: THE HISTORY
+      </h1>
+      <img
+        src="https://placehold.co/200x200"
+        alt="bowl of butter pecan ice cream"
+      />
+      <section>
+        <h2>You Can't Have That!</h2>
+        <p>
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Explicabo
+          odio aut facilis iusto! Quam rerum laboriosam necessitatibus labore,
+          alias esse minima eum ad, dignissimos facere nesciunt consequuntur
+          reprehenderit explicabo obcaecati.
+        </p>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis
+          aperiam iusto excepturi saepe, laboriosam dolorem tenetur qui
+          voluptate, necessitatibus ducimus quam at eius dolor deleniti ut
+          eveniet, similique est numquam. Culpa magnam architecto, deleniti
+          reiciendis beatae rem veritatis perferendis, amet obcaecati neque
+          inventore facere illum ipsa harum assumenda. Exercitationem nihil
+          cupiditate obcaecati, fugiat esse recusandae hic adipisci asperiores
+          reprehenderit quae. Obcaecati magni ducimus aut, est mollitia cumque
+          autem ipsum molestias voluptatum iusto dolorem cupiditate accusamus
+          unde id dolorum veniam eaque non quasi fugiat veritatis esse? Optio,
+          hic libero. Nihil, sequi?
+        </p>
+      </section>
+      <section>
+        <h2>An Alternative: Abundance of Pecans</h2>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores
+          nobis a fugiat deleniti maiores quis molestiae non nam architecto
+          magni vitae quibusdam quaerat corporis voluptate ratione, iusto
+          libero, mollitia rerum.
+        </p>
+        <img src="https://placehold.co/200x200" alt="pecan tree" />
+
+        <p>
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Officiis
+          nulla deleniti itaque. Earum magnam veritatis obcaecati tempora
+          asperiores eos aperiam repellat minus explicabo veniam, quo debitis
+          consequatur nemo odit quisquam.
+        </p>
+      </section>
+      <section>
+        <h2>A New Flavor in Ya Ear!</h2>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores
+          quas quos quisquam adipisci excepturi tempore debitis harum nemo.
+          Dolorem quo aperiam, quasi quae praesentium amet odit doloremque ad
+          delectus harum. Ratione eum ullam maxime labore magnam quo vel dicta
+          nulla facilis corrupti! Minima labore nam dolorum incidunt beatae
+          praesentium! Dicta quia rerum minima saepe vero blanditiis! Voluptas
+          dicta officiis rerum?
+        </p>
+      </section>
+
+      <!-- Contact Form -->
+      <section class="margin-top">
+       
+          <h2>Contact Us</h2>
+          <h3>Subscribe to Us Below:</h3>
+       
+        <!-- name input -->
+        <div class="container">
+          <form class="form-2" method="GET" action="#">
+            <label class="label" for="name">Name:</label>
+            <input class="input" type="text" id="name" name="name" />
+            <!-- email input -->
+            <label class="label" for="email">Email:</label>
+            <input class="input" type="email" id="email" name="email" />
+            <!-- message input -->
+            <label class="label" for="message">Message:</label>
+            <textarea class="textarea" name="message" id="message"></textarea>
+            <!-- button -->
+            <button class="button" type="submit">Submit</button>
+          </form>
+        </div>
+      </section>
     </main>
 
-    <footer>Shantel Smith| Copyright &copy; 2025</footer>
-</body>
+    <footer class="footer">Shantel Smith| Copyright &copy; <span class="year">2025</span></footer>
+  </body>
 </html>
